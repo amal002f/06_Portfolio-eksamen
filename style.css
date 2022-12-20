@@ -21,3 +21,8 @@ h1 {
   color: rgb(134, 141, 138);
   text-align: center;
 }
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
