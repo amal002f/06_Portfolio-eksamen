@@ -4,12 +4,75 @@
   padding: 0;
 }
 
+/* så alle billeder fylder det hele, dvs. har en størrelse/width på 100% */
 img {
   width: 100%;
   height: auto;
   display: block;
 }
 
+/* menu*/
+ul#menu li {
+  display: inline;
+}
+
+/* sticky betyder at menuen følger med når man scroller ned på siden */
+header {
+  position: sticky;
+  top: 0;
+  padding: 1rem 2rem;
+  box-shadow: 0 12px 28px 0 rgb(0 0 0 / 30%);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  z-index: +1;
+  background-color: rgb(237, 230, 222);
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  gap: 35px;
+  overflow-x: auto;
+}
+
+/* farven på teksten */
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #5e6b74;
+}
+
+/* farven når man holder musen hen over teksten */
+a:hover {
+  color: #252d38;
+}
+
+/* ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  font-family: "poppins regular";
+  color: rgb(245, 245, 245);
+} */
+
+/* burgermenu */
+nav {
+  --less-than: 600;
+  --burger-lines: #000000;
+  --burger-border: #000000;
+}
+
+/* givet alle siderne den samme bagrundsfarve fordi det er inde i main */
+
+/* alle overskrifter*/
 h1 {
   font-size: 55px;
   color: rgba(172, 146, 117, 0.588);
