@@ -51,38 +51,33 @@ a:hover {
   color: #252d38;
 }
 
-/* ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-  font-family: "poppins regular";
-  color: rgb(245, 245, 245);
-} */
-
 /* burgermenu */
+/* less-than betyder når siden bliver mindre end 600, så vises burgermenuen */
 nav {
   --less-than: 600;
   --burger-lines: #000000;
   --burger-border: #000000;
 }
 
+/* footer */
+.footer {
+  font-size: 18px;
+  color: #5e6b74;
+  text-align: center;
+}
+
 /* givet alle siderne den samme bagrundsfarve fordi det er inde i main */
+main {
+  background-color: #eceff3;
+}
 
 /* alle overskrifter*/
 h1 {
   font-size: 55px;
   color: rgba(172, 146, 117, 0.588);
   text-align: center;
-}
-
-.footer {
-  font-size: 18px;
-  color: rgb(134, 141, 138);
-  text-align: center;
+  padding: 48px;
+  font-family: "Merriweather";
 }
 
 p {
