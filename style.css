@@ -28,6 +28,7 @@ header {
   z-index: +1;
   background-color: rgb(237, 230, 222);
   font-family: "Merriweather";
+  font-size: 14px;
 }
 
 header nav ul {
