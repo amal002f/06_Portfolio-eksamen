@@ -27,6 +27,7 @@ header {
   align-items: baseline;
   z-index: +1;
   background-color: rgb(237, 230, 222);
+  font-family: "Merriweather";
 }
 
 header nav ul {
@@ -64,6 +65,7 @@ nav {
   font-size: 18px;
   color: #5e6b74;
   text-align: center;
+  font-family: "Merriweather";
 }
 
 /* givet alle siderne den samme bagrundsfarve fordi det er inde i main */
@@ -77,10 +79,11 @@ h1 {
   color: rgba(172, 146, 117, 0.588);
   text-align: center;
   padding: 48px;
-  font-family: "Merriweather";
+  font-family: "Lora";
 }
 
 p {
   font-size: 20px;
   text-align: center;
+  font-family: "Merriweather";
 }
