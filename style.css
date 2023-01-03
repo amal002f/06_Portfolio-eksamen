@@ -243,7 +243,75 @@ p {
   transform: translateY(4px);
 }
 
+/* link til website opgaven */
 .link1 {
+  display: flex;
+  justify-content: center;
+}
+
+/* link til emnesite opgaven */
+.link2 {
+  display: flex;
+  justify-content: center;
+}
+
+/* .............. til siden tema 3 ................ */
+
+/* .............. til siden tema 4 ................ */
+
+/* .............. til siden tema 5 ................ */
+.grid_3-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 60px;
+  gap: 19px;
+}
+
+/* h2 på redesign opgave */
+.overskrift9 {
+  font-size: 32px;
+  color: rgba(133, 121, 108, 0.588);
+  text-align: center;
+  font-family: "Lora";
+  padding: 10px;
+}
+
+/* h2 på redesign opgave */
+.overskrift10 {
+  font-size: 32px;
+  color: rgba(133, 121, 108, 0.588);
+  text-align: center;
+  font-family: "Lora";
+  padding-top: 25px;
+}
+
+/* tekst redesign opgave */
+.tekst7 {
+  font-size: 15px;
+  text-align: center;
+  font-family: "Merriweather";
+  color: rgba(15, 15, 14, 0.588);
+  padding: 25px;
+}
+
+/* tekst redesign opgave */
+.tekst8 {
+  font-size: 15px;
+  text-align: center;
+  font-family: "Merriweather";
+  color: rgba(15, 15, 14, 0.588);
+  padding: 25px;
+}
+
+/* link til redesignhjemmeside */
+.link6 {
+  display: flex;
+  justify-content: center;
+}
+
+/* link til procesdokument (hører til opgaven redesignhjemmeside) */
+.link7 {
   display: flex;
   justify-content: center;
 }
