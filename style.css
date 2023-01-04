@@ -16,6 +16,7 @@ ul#menu li {
   display: inline;
 }
 
+/* menuen */
 /* sticky betyder at menuen følger med når man scroller ned på siden */
 header {
   position: sticky;
@@ -89,8 +90,28 @@ p {
   font-family: "Merriweather";
 }
 
-/* .............. til siden index (forsiden) .......... */
+/* knap/link til at se opgaveløsningerne */
+.button {
+  color: rgba(133, 121, 108, 0.588);
+  background-color: rgb(254, 254, 254);
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-family: "Merriweather";
+  display: flex;
+  margin: 6px;
+}
 
+/* når man trykker på knappen */
+.button:active {
+  background-color: #8b948b;
+  box-shadow: 2px 2px 2px;
+  transform: translateY(4px);
+}
+
+/* .............. til siden index (forsiden) .......... */
 /* overskriften på forsiden- da den skal være anderledes end de andre overskrifter */
 .overskrift1 {
   font-size: 86px;
@@ -223,26 +244,6 @@ p {
   }
 }
 
-/* knap/link til at se opgaveløsningerne */
-.button {
-  color: rgba(133, 121, 108, 0.588);
-  background-color: rgb(254, 254, 254);
-  border: none;
-  border-radius: 10px;
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 14px;
-  font-family: "Merriweather";
-  display: flex;
-  margin: 6px;
-}
-
-.button:active {
-  background-color: #8b948b;
-  box-shadow: 2px 2px 2px;
-  transform: translateY(4px);
-}
-
 /* link til website opgaven */
 .link1 {
   display: flex;
@@ -256,13 +257,21 @@ p {
 }
 
 /* .............. til siden tema 3 ................ */
+/* grid på billederne på løsning og pitch opgaven */
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  gap: 13px;
+}
+
 /* h2 på løsning opgaven */
 .overskrift6 {
   font-size: 32px;
   color: rgba(133, 121, 108, 0.588);
   text-align: center;
   font-family: "Lora";
-  padding-top: 50px;
+  padding-top: 53px;
 }
 
 /* h2 på pitch opgaven */
@@ -271,7 +280,7 @@ p {
   color: rgba(133, 121, 108, 0.588);
   text-align: center;
   font-family: "Lora";
-  padding-top: 40px;
+  padding-top: 32px;
 }
 
 /*tekst på løsning opgaven */
@@ -280,7 +289,7 @@ p {
   text-align: center;
   font-family: "Merriweather";
   color: rgba(15, 15, 14, 0.588);
-  padding: 10px;
+  padding: 15px;
 }
 
 /*tekst på pitch opgaven */
@@ -289,18 +298,63 @@ p {
   text-align: center;
   font-family: "Merriweather";
   color: rgba(15, 15, 14, 0.588);
-  padding: 10px;
+  padding: 15px;
 }
 
-.container1 {
-  display: grid;
-  place-items: center start;
-  padding: 2%;
-  aspect-ratio: 16/9;
+/* link til løsning opgaven (protoype opgaven) */
+.link3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+/* link til pitch opgaven */
+.link4 {
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+}
+
+/* har sat det ind i en media queries, så det også virker på mobil størrelse- det vil sige så sitet er responsivt */
+@media (max-width: 800px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .img4 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .img5 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .img6 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .img7 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+
+  .img8 {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+
+  .img9 {
+    grid-column: 1/3;
+    grid-row: 6/7;
+  }
 }
 
 /* .............. til siden tema 4 ................ */
-/* grid på teksten/teksterne */
+/* grid på teksten og billederne */
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -308,11 +362,11 @@ p {
 }
 
 /* grid på billederne */
-.grid_1-1-1 {
+/* .grid_1-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 20px;
-}
+} */
 
 /* overskrift på h2 */
 .overskrift8 {
@@ -320,7 +374,7 @@ p {
   color: rgba(133, 121, 108, 0.588);
   text-align: center;
   font-family: "Lora";
-  padding-top: 50px;
+  padding-top: 48px;
 }
 
 /* tekst */
@@ -329,22 +383,22 @@ p {
   text-align: center;
   font-family: "Merriweather";
   color: rgba(15, 15, 14, 0.588);
-  padding: 45px;
+  padding: 40px;
 }
 
 /* billede af spillet */
-.spil {
-  padding: 30px;
+.img10 {
+  padding: 25px;
 }
 
 /* billede af forsiden på mit spil */
-.forside {
-  padding: 25px;
+.img11 {
+  padding: 20px;
 }
 
 /* billede af når man har vundet spillet */
-.vundet {
-  padding: 25px;
+.img12 {
+  padding: 20px;
 }
 
 /* link til mit eget spil */
@@ -366,17 +420,17 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .spil {
+  .img10 {
     grid-column: 1/3;
     grid-row: 3/4;
   }
 
-  .forside {
+  .img11 {
     grid-column: 1/3;
     grid-row: 4/5;
   }
 
-  .vundet {
+  .img12 {
     grid-column: 1/3;
     grid-row: 5/6;
   }
@@ -453,7 +507,7 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-  .img6 {
+  .img13 {
     grid-column: 1/3;
     grid-row: 1/2;
   }
@@ -463,7 +517,7 @@ p {
     grid-row: 2/3;
   }
 
-  .img7 {
+  .img14 {
     grid-column: 1/3;
     grid-row: 3/4;
   }
@@ -473,12 +527,12 @@ p {
     grid-row: 4/5;
   }
 
-  .img8 {
+  .img15 {
     grid-column: 1/3;
     grid-row: 5/6;
   }
 
-  .img9 {
+  .img16 {
     grid-column: 1/3;
     grid-row: 6/7;
   }
