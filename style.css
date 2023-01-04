@@ -114,42 +114,60 @@ p {
 /* .............. til siden index (forsiden) .......... */
 /* overskriften på forsiden- da den skal være anderledes end de andre overskrifter */
 .overskrift1 {
-  font-size: 86px;
+  font-size: 98px;
   color: rgba(172, 146, 117, 0.588);
-  text-align: center;
+  /* text-align: center; */
   font-family: "Lora";
-  /* grid-area: 1/1; */
+  padding-bottom: 98px;
+  padding-top: 2px;
+  padding-left: 90px;
+  grid-area: 1/1;
 }
 
 /* h2 på forsiden */
 .overskrift2 {
-  font-size: 50px;
+  font-size: 35px;
   color: rgba(133, 121, 108, 0.588);
-  text-align: center;
+  /* text-align: center; */
   font-family: "Lora";
-  /* grid-area: 1/1; */
+  grid-area: 1/1;
+  padding-top: 80px;
+  padding-left: 85px;
 }
 
-.tekst {
-  font-size: 20px;
-  text-align: center;
-  font-family: "Merriweather";
-}
-
-/* .container {
+/* på billde, h1 og h2, så overskrifterne ligger ovenpå billedet */
+.container {
   display: grid;
-  aspect-ratio: 16/9;
+  /* aspect-ratio: 16/9; */
+  place-items: center;
 }
 
-.img1 .overskrift1 .overskrift2 {
+/* h1 og h2 er ovenpå billedet */
+.overskrift1,
+.overskrift2,
+.img1 {
   grid-area: 1/1;
 }
 
+/* baggrundsbillde */
 .img1 {
   width: 100%;
   height: auto;
-  grid-area: 1/1;
-} */
+}
+
+/* har sat det ind i en media queries, så det også virker på mobil størrelse- det vil sige så sitet er responsivt */
+@media (max-width: 800px) {
+  .overskrift1 {
+    font-size: 50px;
+    padding-left: 95px;
+    padding-top: 30px;
+  }
+  .overskrift2 {
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 85px;
+  }
+}
 
 /* .............. til siden tema 2 ................ */
 .grid_2-2 {
@@ -261,8 +279,13 @@ p {
 .grid_1-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 20px;
-  gap: 13px;
+  /* 18px er top og bund padding og 78px er højre og venstre padding */
+  padding: 18px 78px;
+  /* padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 78px;
+  padding-left: 78px; */
+  gap: 15px;
 }
 
 /* h2 på løsning opgaven */
@@ -289,7 +312,8 @@ p {
   text-align: center;
   font-family: "Merriweather";
   color: rgba(15, 15, 14, 0.588);
-  padding: 15px;
+  /* 15px er top og bund padding og 80px er højre og venstre padding- nemmere at skrive det sådan */
+  padding: 15px 80px;
 }
 
 /*tekst på pitch opgaven */
@@ -298,7 +322,8 @@ p {
   text-align: center;
   font-family: "Merriweather";
   color: rgba(15, 15, 14, 0.588);
-  padding: 15px;
+  /* 15px er top og bund padding og 80px er højre og venstre padding- nemmere at skrive det sådan */
+  padding: 15px 80px;
 }
 
 /* link til løsning opgaven (protoype opgaven) */
