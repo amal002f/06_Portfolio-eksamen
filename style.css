@@ -194,8 +194,16 @@ p {
 }
 
 /* h3 på website opgaven*/
-.overskrift4 {
+/* .overskrift4 {
   font-size: 20px;
+  color: rgba(133, 121, 108, 0.588);
+  text-align: center;
+  font-family: "Lora";
+} */
+
+/* h2 på emnesite opgaven */
+.overskrift5 {
+  font-size: 32px;
   color: rgba(133, 121, 108, 0.588);
   text-align: center;
   font-family: "Lora";
@@ -207,14 +215,7 @@ p {
   text-align: center;
   font-family: "Merriweather";
   color: rgba(15, 15, 14, 0.588);
-}
-
-/* h2 på emnesite opgaven */
-.overskrift5 {
-  font-size: 32px;
-  color: rgba(133, 121, 108, 0.588);
-  text-align: center;
-  font-family: "Lora";
+  padding: 18px;
 }
 
 /* tekst på emnesite opgaven */
@@ -223,19 +224,21 @@ p {
   font-family: "Merriweather";
   text-align: center;
   color: rgba(15, 15, 14, 0.588);
-  padding: 15px;
+  padding: 30px;
 }
 
 /* link til website opgaven */
 .link1 {
   display: flex;
   justify-content: center;
+  padding: 2px;
 }
 
 /* link til emnesite opgaven */
 .link2 {
   display: flex;
   justify-content: center;
+  padding: 4px;
 }
 
 /* har sat det ind i en media queries, så det også virker på mobil størrelse- det vil sige så sitet er responsivt */
@@ -464,8 +467,8 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  padding: 60px;
-  gap: 28px;
+  padding: 65px;
+  gap: 30px;
 }
 
 /* h2 på pilotsite opgave */
@@ -477,8 +480,26 @@ p {
   padding-top: 65px;
 }
 
+/* h2 på redesignhjemmeside opgave */
+.overskrift10 {
+  font-size: 32px;
+  color: rgba(133, 121, 108, 0.588);
+  text-align: center;
+  font-family: "Lora";
+  padding-top: 15px;
+}
+
 /* tekst pilotsite opgave */
 .tekst7 {
+  font-size: 15px;
+  text-align: center;
+  font-family: "Merriweather";
+  color: rgba(15, 15, 14, 0.588);
+  padding: 35px;
+}
+
+/* tekst redesignhjemmeside opgave */
+.tekst8 {
   font-size: 15px;
   text-align: center;
   font-family: "Merriweather";
@@ -490,24 +511,6 @@ p {
 .link7 {
   display: flex;
   justify-content: center;
-}
-
-/* h2 på redesignhjemmeside opgave */
-.overskrift10 {
-  font-size: 32px;
-  color: rgba(133, 121, 108, 0.588);
-  text-align: center;
-  font-family: "Lora";
-  padding-top: 55px;
-}
-
-/* tekst redesignhjemmeside opgave */
-.tekst8 {
-  font-size: 15px;
-  text-align: center;
-  font-family: "Merriweather";
-  color: rgba(15, 15, 14, 0.588);
-  padding: 35px;
 }
 
 /* link til procedokument (hører til opgaven redesignhjemmeside) */
