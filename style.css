@@ -138,10 +138,13 @@ p {
 }
 
 /* på billde, h1 og h2, så overskrifterne ligger ovenpå billedet */
-.container {
+.forside {
   display: grid;
-  /* aspect-ratio: 16/9; */
+  /* betyder at baggrundsbilledet er 1920 (højde) x 1080 (bredde) is a 16:9 aspect ratio */
+  /* 16:9 er et skærmformat og bruges til et baggrundsbillede på en website */
+  aspect-ratio: 16/9;
   place-items: center;
+  padding-bottom: 15px;
 }
 
 /* h1 og h2 er ovenpå billedet */
