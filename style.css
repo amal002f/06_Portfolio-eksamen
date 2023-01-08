@@ -283,15 +283,23 @@ p {
 
 /* hører til javascript dokument */
 /* Via javascript har jeg fået link1 (linket til website) og link2 (linket til emnesite) til at hoppe, når man trykker på det */
+/* Dette er en CSS animation */
 
 .hop {
   animation-name: hop_kf;
+  /* hvor lang tid animation tager */
   animation-duration: 1s;
+  /* hvor mange gange animationen "counter" */
   animation-iteration-count: 2;
+  /* tiden/hastigheden på animationen */
   animation-timing-function: linear;
+  /* animation-direction angiver, om en animation skal afspilles fremad, tilbage eller skiftevis frem og tilbage mellem at afspille sekvensen frem og tilbage. */
+  /* alternate betyder at animationen afspilles fremad */
   animation-direction: alternate;
 }
 
+/* bruger keyframes til animation */
+/* i dette en keyframes til animationen hop */
 @keyframes hop_kf {
   0% {
     transform: translateY(0);

@@ -34,6 +34,7 @@ function clickLinkhandler1() {
   document.querySelector(".link1").classList.remove("hop");
 
   // offsetLeft: returnerer den venstre position (i pixels) i forhold til den overordnede //
+  // bruger offsetLeft for at kunne genstarte hop animationen //
   document.querySelector(".link1").offsetLeft;
 
   // tilføjer class hop på igen //
@@ -52,6 +53,7 @@ function clickLinkhandler2() {
   document.querySelector(".link2").classList.remove("hop");
 
   // offsetLeft: returnerer den venstre position (i pixels) i forhold til den overordnede //
+  // bruger offsetLeft for at kunne genstarte hop animationen //
   document.querySelector(".link2").offsetLeft;
 
   // tilføjer class hop på igen //
