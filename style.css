@@ -137,7 +137,8 @@ p {
   padding-left: 85px;
 }
 
-/* på billde, h1 og h2, så overskrifterne ligger ovenpå billedet */
+/* på baggrundsbilledet, h1 og h2, så overskrifterne ligger ovenpå billedet */
+/* billedet er baggrunden for h1 og h2 */
 .forside {
   display: grid;
   /* betyder at baggrundsbilledet er 1920 (højde) x 1080 (bredde) is a 16:9 aspect ratio */
@@ -566,6 +567,152 @@ p {
   .img16 {
     grid-column: 1/3;
     grid-row: 6/7;
+  }
+}
+
+/* .............. til siden tema 6 ................ */
+
+/* grid på billederne */
+/* .grid_1-1-1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 40px;
+} */
+
+/* grid på billederne i portfolio eksamen opgaven */
+.grid_3-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: 1fr 1fr;
+  gap: 30px;
+  padding: 40px;
+}
+
+/* grid på billederne af layoutdiagrammerne */
+.grid_4-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+}
+
+/* overskrift på h2 i portfolio eksamen opgave*/
+.overskrift17 {
+  font-size: 30px;
+  color: rgba(133, 121, 108, 0.588);
+  text-align: center;
+  font-family: "Lora";
+  padding-top: 35px;
+}
+
+/* overskrift på h2 i layoutdiagram eksamen*/
+.overskrift18 {
+  font-size: 30px;
+  color: rgba(133, 121, 108, 0.588);
+  text-align: center;
+  font-family: "Lora";
+  padding-top: 35px;
+}
+
+/* tekst på portfolio eksamen opgaven */
+.tekst13 {
+  font-size: 15px;
+  /* text-align: center; */
+  font-family: "Merriweather";
+  color: rgba(15, 15, 14, 0.588);
+  /* 15px er top og bund padding og 80px er højre og venstre padding- nemmere at skrive det sådan */
+  padding: 15px 80px;
+}
+
+/* har sat det ind i en media queries, så det også virker på mobil størrelse- det vil sige så sitet er responsivt */
+@media (max-width: 800px) {
+  .grid_3-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .grid_4-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .img18 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .portfolio {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .img19 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .layoutdiagram {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+
+  .img20 {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+
+  .img21 {
+    grid-column: 1/3;
+    grid-row: 6/7;
+  }
+
+  .img22 {
+    grid-column: 1/3;
+    grid-row: 7/8;
+  }
+
+  .img23 {
+    grid-column: 1/3;
+    grid-row: 8/9;
+  }
+
+  .img24 {
+    grid-column: 1/3;
+    grid-row: 9/10;
+  }
+
+  .img25 {
+    grid-column: 1/3;
+    grid-row: 10/11;
+  }
+
+  .img26 {
+    grid-column: 1/3;
+    grid-row: 11/12;
+  }
+
+  .img27 {
+    grid-column: 1/3;
+    grid-row: 12/13;
+  }
+
+  .img28 {
+    grid-column: 1/3;
+    grid-row: 13/14;
+  }
+
+  .img29 {
+    grid-column: 1/3;
+    grid-row: 14/15;
+  }
+
+  .img30 {
+    grid-column: 1/3;
+    grid-row: 15/16;
   }
 }
 
