@@ -267,7 +267,7 @@ p {
 .link2 {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 2px;
 }
 
 /* har sat det ind i en media queries, så det også virker på mobil størrelse- det vil sige så sitet er responsivt */
